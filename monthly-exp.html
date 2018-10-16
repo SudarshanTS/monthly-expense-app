@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="monthly-exp.css">
+	<script type="text/javascript" src="monthly-exp.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.14.1/lodash.min.js"></script>
+      <title>Monthly expenses</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         </head>
+</head>
+<body>
+ <div class="grid">
+	<div id="accountheader">
+		<h1 id="accountdetails">Account Details</h1>
+		<input type="button" id="showbutton" value="Show" onclick="showdata()"></input>
+	</div>
+	 <div class="info">
+ 	<div class="inputbox">
+ 	
+    	<div><label>Date</label><input placeholder="Pickdate"onfocus="(this.type='date')"id="dateid" class="style"  required>
+    	</div>
+		<div class="spacebtw"><label>Description</label><input type="text"name="" value=""id="purpose"placeholder="Description" class="style" required autocomplete="off">
+		</div>
+     	<div class="spacebtw"><label>Status</label><select name="expenses" id="exp"class="style" required>
+			    <option value="" selected disabled hidden>Select</option> 	
+			    <option value="Credit" id="optioncredit">Credit</option>
+			    <option value="Debit" id="optiondebit">Debit</option> 
+    			</select>
+       	</div>
+		<div class="spacebtw"><label>Amount</label><input type="number" name="amt"id="amt" title="Only Numbers Allowed" placeholder="Amount" class="style" required autocomplete="off">
+    	</div>
+    		<div id="clear">
+		    <div><a href="#" id="link" onclick="reset()" id="link">clear</a></div>
+            <div><input type="button" onclick="upload()" value="Add to list" id="upload"></div>  
+	      </div>
+	 	</div>
+   </div>
+        <div id="form">
+	       </div>
+	       <div id="show"></div>	
+    </div>
+    
+</body>
+</html>

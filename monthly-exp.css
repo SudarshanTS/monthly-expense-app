@@ -1,0 +1,208 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	overflow-x:hidden; 
+}
+.grid{
+	display: grid;
+    grid-gap: 2px;
+    grid-template-areas: 'header header header header header header' 
+                          'menu main main main main main' 
+                          'menu footer footer footer footer footer';
+}
+::placeholder{
+	color:#999999;
+	font-family: Roboto;
+
+}
+.info{
+	grid-area: menu;
+    position: static;
+    margin: -10px;
+    font-family: Roboto;
+    font-size: 20px;
+    width: 318px;
+    height: 696px;
+    background-color: #4883FF;
+ } 
+ .inputbox{
+ 	margin: 76px 4px;
+ }
+ .showtable{
+ 	position: absolute;
+ 	top: 49px;
+ 	float: right;
+    margin:-39px 95px;
+    height: 28px;
+    width: 89%;
+    padding: 3px 14px;
+}
+
+#showbutton{
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    padding: 16px 11px;
+    /* margin: 8px -32px; */
+    width: 114px;
+    background-color: #DCDCDC;
+    opacity: 0.5;
+    font-size: 15px;
+    font-family: Roboto;
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+td{
+	height: 10px;
+	width: 10px;
+}
+   
+#upload{
+	width: 87px;
+    height: 28px;
+    background-color:#C4D221;
+    border: none;
+    cursor: pointer;
+    font-family: Roboto;
+}
+#empTable{
+	    margin: -81px -300px;
+}
+
+#form{
+    grid-area: main;   
+    margin: 15% 31%;
+    }
+.debitstyle{
+color:#FF0000;border:none;text-align:center;background-color:#FFDDDD;margin:10px 17px;height:34px;
+}
+.creditstyle{
+	color: #0053FF;border:none;text-align:center;background-color: #E1EBFF;margin: 10px 17px;height:34px;
+}
+.formstyle{
+	border: none;
+	text-align: center;
+}
+#clear{
+	display: flex;
+    justify-content: space-between;
+    margin: 33px 0px;
+    width: 93%;
+    }
+ .child:{
+  display: flex;
+}
+    
+/*.clearstyle{
+     float: left;
+ }
+ .buttonstyle{
+ 	float: right;
+ }*/   
+#link{
+	color: antiquewhite;
+    opacity: 0.3;
+    margin-left: 11px;
+    font-size: 20px;
+    font-family: Roboto;
+
+   
+}
+.class {
+  color: #000000;
+}
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+#accountheader
+{   
+    top: 0px;
+    margin: 0% 2% 0% 24%;
+    font-family: Roboto;
+    font-size: 10px;
+    grid-area: header;
+    /* background: black; */
+    height: 5rem;
+    position: absolute;
+    width: 75.3%;    
+}
+/*input::-webkit-datetime-edit{ color: transparent; }*/
+input:focus::-webkit-datetime-edit{ color: #000; } 
+
+ table 
+        {
+            width: 100%;
+            font: 17px Roboto;
+        }
+table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            margin-left: -245px;
+        }
+label{
+	font-family: Roboto;
+	float: left;
+    margin: 0px 14px;
+    color: #fff8f8;
+    opacity: 0.7;
+    font-size: medium;
+} 
+
+.style
+{       
+	height: 28px;
+    width: 89%;
+    padding: 3px 14px;
+	margin: 3px 12px;
+	border-radius: 2px 2px 2px 2px;
+	border: none;
+ }
+
+.spacebtw
+{
+  	margin-top: 14px;
+}
+#showTable
+{
+	margin: 0px 118px;
+}  
+#show
+{
+  grid-area: footer;
+  margin: 0px 3%;
+  position: relative;
+  left: -10%;
+}
+.heading
+{
+  color: white;
+  margin-top: 12px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+ 
+ 
+ 
+}
+@media screen and (max-width:880px) {
+ .info{
+ 	    margin: -75px -9px
+ }
+ #accountheader{} 
+ #showbutton{}
+ #accountdetails{}
+ #form{}
+ #show{}
+}
+
+ 
+ 
